@@ -11,7 +11,7 @@
 
   var getRandom = function (min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
-  }
+  };
 
   var WIZARD_NAMES = ['Иван', 'Хуан Себастьян', 'Мария', 'Кристоф', 'Виктор', 'Юлия', 'Люпита', 'Вашингтон'];
   var WIZARD_SURNAME = ['да Марья', 'Верон', 'Мирабелла', 'Вальц', 'Онопко', 'Топольницкая', 'Нионго', 'Ирвинг'];
@@ -67,14 +67,14 @@
 
     return wizardElement;
   };
-/* создание коробки и добавление в нее элементов */
+  /* создание коробки и добавление в нее элементов */
   var createFragment = function (frag, block) {
     var fragment = document.createDocumentFragment();
     fragment.appendChild((frag));
     block.appendChild(fragment);
   };
 
-/* добавление волшебников */
+  /* добавление волшебников */
   for (var i = 0; i < wizards.length; i++) {
     createFragment(renderWizard(wizards[i]), similarListElement);
   }
