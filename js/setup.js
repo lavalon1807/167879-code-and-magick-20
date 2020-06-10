@@ -139,8 +139,8 @@
     }
   });
 
-  //переводим ошибки на русский
-  userNameInput.addEventListener('invalid', function (evt) {
+  // переводим ошибки на русский
+  userNameInput.addEventListener('invalid', function () {
     if (userNameInput.validity.tooShort) {
       userNameInput.setCustomValidity('Имя должно состоять минимум из 2-х символов');
     } else if (userNameInput.validity.tooLong) {
