@@ -54,4 +54,12 @@
   });
 
   setup.querySelector('.setup-similar').classList.remove('hidden');
+
+  var form = setup.querySelector('.setup-wizard-form');
+  form.addEventListener('submit', function (evt) {
+    window.upload(new FormData(form), function () {
+      setup.classList.add('hidden');
+    });
+    evt.preventDefault();
+  });
 })();

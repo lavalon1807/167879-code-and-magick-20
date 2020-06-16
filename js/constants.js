@@ -25,7 +25,9 @@ window.constants = (function () {
       '#5ce6c0',
       '#e848d5',
       '#e6e848'
-    ]
+    ],
+
+    COUNT_WIZARDS: ['4']
   };
 
 })();
