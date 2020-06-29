@@ -1,8 +1,6 @@
 'use strict';
 window.constants = (function () {
   return {
-    WIZARD_NAMES: ['Иван', 'Хуан Себастьян', 'Мария', 'Кристоф', 'Виктор', 'Юлия', 'Люпита', 'Вашингтон'],
-    WIZARD_SURNAME: ['да Марья', 'Верон', 'Мирабелла', 'Вальц', 'Онопко', 'Топольницкая', 'Нионго', 'Ирвинг'],
     WIZARD_COAT: [
       'rgb(101, 137, 164)',
       'rgb(241, 43, 107)',
@@ -27,7 +25,8 @@ window.constants = (function () {
       '#e6e848'
     ],
 
-    COUNT_WIZARDS: ['4']
+    COUNT_WIZARDS: ['4'],
+    DEBOUNCE_INTERVAL: ['500'] // ms
   };
 
 })();
